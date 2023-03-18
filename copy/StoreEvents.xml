@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--created by anandu.v@accrodx.com-->
+<!--Parameter values for deviceID - Android, IOS, localDevice-->
+<suite name="Enhapp E2E Automation Testing Suite-2">
+<!-- <suite name="Enhapp E2E Automation Testing Suite" parallel = "tests" thread-count = "2"> -->
+    <listeners>
+        <listener class-name="com.enhapp.common.reportsconfig.TestListeners"/>
+    </listeners>
+    
+    <test verbose="10"  name="Partner Events creation" preserve-order="true">
+        <classes>
+          
+          	<class name="com.enhapp.web.tests.TestStoreAndEventsPagePo"/>
+            	<parameter name="driverOption" value="Chrome" />
+				<parameter name="role" value="partner" />
+			
+        </classes>
+    </test>
+ </suite>
+
